@@ -152,7 +152,7 @@ const Signup = () => {
                 position: "absolute",
                 right: "10px",
                 top: "50%",
-                transform: "translateY(-50%)",
+                transform: "translateY(-75%)",
                 cursor: "pointer",
                 display: "flex",
                 alignItems: "center",
@@ -186,7 +186,7 @@ const Signup = () => {
           </button>
         </form>
         <p className="switch-auth">
-          Already have an account? <Link to="/signup"><b>Login</b></Link>
+          Already have an account? <Link to="/login"><b>Login</b></Link>
         </p>
       </div>
     </div>
