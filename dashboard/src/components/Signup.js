@@ -56,7 +56,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3002/signup", {
+      const res = await axios.post("https://zerodha-clone-pjyx.onrender.com/signup", {
         username,
         email,
         phone,
@@ -67,7 +67,7 @@ const Signup = () => {
         showSuccessMessage(`Welcome, ${username}! Your account has been created.`);
         setSuccess(true);
         setTimeout(async () => {
-          const loginRes = await axios.post("http://localhost:3002/login", {
+          const loginRes = await axios.post("https://zerodha-clone-pjyx.onrender.com/login", {
             username,
             password,
           });
@@ -78,7 +78,7 @@ const Signup = () => {
             login(loginRes.data.username, loginRes.data.userId);
             
             const token = loginRes.data.token;
-            axios.post("http://localhost:3002/seedData", {}, {
+            axios.post("https://zerodha-clone-pjyx.onrender.com/seedData", {}, {
               headers: { Authorization: `Bearer ${token}` }
             }).then(() => {
               setTimeout(() => navigate("/"), 1500);

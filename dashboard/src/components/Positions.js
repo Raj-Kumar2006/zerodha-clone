@@ -6,7 +6,7 @@ const Positions = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    axios.get("http://localhost:3002/allPositions", {
+    axios.get("https://zerodha-clone-pjyx.onrender.com/allPositions", {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {

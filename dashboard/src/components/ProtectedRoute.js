@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }) => {
   const { user } = useContext(GeneralContext);
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/signup" replace />;
   }
 
   return children;

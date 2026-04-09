@@ -46,7 +46,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:3002/login", {
+      const res = await axios.post("https://zerodha-clone-pjyx.onrender.com/login", {
         username,
         password,
       });
@@ -58,7 +58,7 @@ const Login = () => {
         login(res.data.username, res.data.userId);
         
         const token = res.data.token;
-        axios.post("http://localhost:3002/seedData", {}, {
+        axios.post("https://zerodha-clone-pjyx.onrender.com/seedData", {}, {
           headers: { Authorization: `Bearer ${token}` }
         }).then(() => {
           showSuccessMessage(`Welcome, ${res.data.username}!`);

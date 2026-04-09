@@ -30,7 +30,7 @@ const Holdings = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:3002/allHoldings", {
+      .get("https://zerodha-clone-pjyx.onrender.com/allHoldings", {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {
