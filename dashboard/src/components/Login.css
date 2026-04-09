@@ -177,7 +177,7 @@
   position: absolute;
   right: 12px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-85%);
   cursor: pointer;
   display: flex;
   align-items: center;
