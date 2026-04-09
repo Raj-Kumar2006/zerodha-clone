@@ -104,12 +104,13 @@ function Universe() {
 
         {/* Button */}
         <div className="mt-5">
-          <button
+          <a
+            href="https://zerodha-dashboard-new.netlify.app/signup"
             className="p-2 btn btn-primary fs-5 fw-semibold mb-5"
-            style={{ width: "20%", margin: "0 auto" }}
+            style={{ width: "20%", margin: "0 auto", display: "inline-block", textDecoration: "none" }}
           >
             Sign up for free
-          </button>
+          </a>
         </div>
       </div>
     </>
