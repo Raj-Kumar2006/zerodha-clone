@@ -20,7 +20,7 @@ function Navbar() {
           <ul className="navbar-nav align-items-center">
 
             <li className="nav-item px-3">
-              <a href="http://localhost:3001/signup" className="nav-link">
+              <a href="https://zerodha-dashboard-new.netlify.app/signup" className="nav-link">
                 Signup
               </a>
             </li>
