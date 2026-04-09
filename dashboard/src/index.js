@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./index.css";
 import Home from "./components/Home";
 import Signup from "./components/Signup";
@@ -14,6 +14,7 @@ root.render(
       <GeneralContextProvider>
         <Routes>
           <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Navigate to="/signup" replace />} />
           <Route
             path="/*"
             element={
